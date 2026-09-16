@@ -20,13 +20,14 @@ img{display:block;width:100%;height:100%;object-fit:cover;}
 .wrap{max-width:960px;margin:0 auto;padding:0 32px;}
 
 header{padding:36px 0;border-bottom:1px solid var(--line);}
+.topbar{height:5px;background:linear-gradient(90deg,#2D5FA0,#1F6F78,#B8862E,#6B4FA0);}
 .brandline{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
-.brand{font-size:16px;font-weight:500;letter-spacing:0.02em;text-decoration:none;}
+.brand{font-size:16px;font-weight:600;letter-spacing:0.02em;text-decoration:none;}
 nav{display:flex;gap:28px;font-size:14px;color:var(--ink-soft);}
 nav a{text-decoration:none;transition:color .15s ease;}
 nav a:hover{color:var(--ink);}
 
-.hero{padding:80px 0 72px;}
+.hero{padding:80px 0 72px;background:linear-gradient(180deg,var(--panel) 0%, var(--bg) 100%);}
 h1{
   font-family:'Source Serif 4',serif;
   font-weight:400;
@@ -41,20 +42,21 @@ h1{
 .hero-meta strong{display:block;font-size:22px;font-weight:500;color:var(--ink);margin-bottom:2px;}
 
 .category{padding:64px 0;border-top:1px solid var(--line);}
-.cat-head{margin-bottom:36px;}
-.cat-title{font-family:'Source Serif 4',serif;font-weight:400;font-size:24px;}
+.cat-head{margin-bottom:36px;display:flex;align-items:center;gap:14px;}
+.cat-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none;}
+.cat-title{font-family:'Source Serif 4',serif;font-weight:400;font-size:24px;color:var(--accent);}
 .cat-count{font-size:13px;color:var(--ink-soft);margin-top:4px;}
 
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
-.card{background:var(--bg);display:flex;flex-direction:column;}
-.card-img{aspect-ratio:16/10;background:var(--panel);overflow:hidden;filter:grayscale(35%) contrast(1.02);}
+.card{background:var(--bg);display:flex;flex-direction:column;border-top:3px solid var(--accent);}
+.card-img{aspect-ratio:16/10;background:var(--panel);overflow:hidden;filter:grayscale(8%) saturate(1.15) contrast(1.05);}
 .card-body{padding:24px;flex:1;display:flex;flex-direction:column;}
 .card-title{font-family:'Source Serif 4',serif;font-size:18px;font-weight:500;margin-bottom:8px;}
 .card-desc{font-size:13.5px;color:var(--ink-soft);flex:1;margin-bottom:18px;}
 .card-foot{display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--line);padding-top:14px;}
-.price{font-size:16px;font-weight:500;}
+.price{font-size:16px;font-weight:600;color:var(--accent);}
 .duration{font-size:12px;color:var(--ink-soft);margin-top:2px;}
-.btn{font-size:12.5px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px;}
+.btn{font-size:12.5px;color:var(--bg);text-decoration:none;background:var(--accent);padding:6px 12px;border-radius:3px;}
 a.card-link{text-decoration:none;}
 
 .cta{margin-top:8px;padding:72px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;}
@@ -69,7 +71,7 @@ footer{padding:28px 0 44px;font-size:12.5px;color:var(--ink-soft);display:flex;j
 .breadcrumb a:hover{color:var(--ink);}
 
 .course-hero{padding:32px 0 48px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;}
-.course-hero-img{aspect-ratio:4/3;overflow:hidden;filter:grayscale(30%) contrast(1.02);}
+.course-hero-img{aspect-ratio:4/3;overflow:hidden;filter:grayscale(8%) saturate(1.15) contrast(1.05);border-top:4px solid var(--accent);}
 .course-eyebrow{font-size:13px;color:var(--accent);margin-bottom:14px;}
 .course-hero h1{font-size:clamp(28px,3.6vw,38px);max-width:none;}
 .course-hero-sub{margin-top:16px;font-size:15.5px;color:var(--ink-soft);}
@@ -93,13 +95,13 @@ footer{padding:28px 0 44px;font-size:12.5px;color:var(--ink-soft);display:flex;j
 .req-list li:last-child{border-bottom:1px solid var(--line);}
 
 .side-panel{background:var(--panel);padding:28px;height:fit-content;position:sticky;top:24px;}
-.side-price{font-family:'Source Serif 4',serif;font-size:28px;margin-bottom:4px;}
+.side-price{font-family:'Source Serif 4',serif;font-size:28px;margin-bottom:4px;color:var(--accent);}
 .side-duration{font-size:13px;color:var(--ink-soft);margin-bottom:22px;}
-.side-panel .btn-primary{display:block;text-align:center;width:100%;margin-bottom:14px;}
+.side-panel .btn-primary{display:block;text-align:center;width:100%;margin-bottom:14px;background:var(--accent);}
 .instructor{margin-top:22px;padding-top:22px;border-top:1px solid var(--line);}
 .instructor-label{font-size:12px;color:var(--ink-soft);margin-bottom:10px;}
 .instructor-row{display:flex;gap:12px;align-items:center;}
-.instructor-photo{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none;filter:grayscale(30%);}
+.instructor-photo{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none;filter:grayscale(10%);border:2px solid var(--accent);}
 .instructor-name{font-size:14px;font-weight:500;}
 .instructor-role{font-size:12.5px;color:var(--ink-soft);}
 
